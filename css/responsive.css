@@ -15,6 +15,11 @@
     .header_inner{
       padding-top:0;
     }
+    .header_logo{
+      height:2.5em;
+      margin:.3em;
+      content:url("../img/udacity_logo_s_viewport.png");
+    }
     .header_title{
       margin:0 0.1em 0 .25em;
       padding:.6em;
@@ -25,9 +30,7 @@
     .header_profiletitle{
       font-size:.6em;
     }
-    .header_logo{
-      height:2.5em;margin:.3em;
-    }
+
 
     .portfolio_image{
       min-height:300px;
@@ -60,34 +63,28 @@
 }
 /* For Meduim Viewport  */
 @media screen and (min-width:426px) and (max-width: 799px){
-  body{
-    padding:0
-  }
 
-  .header{
-    padding-top:0
-  }
   .header_title{
-    margin:.75em 1em .75em .25em
+
+  }
+  .header_logo{
+    content:url("../img/udacity_logo_m_viewport.png");
   }
   .header_profilename{
-    font-size:2em
+    font-size:2em;
   }
 
   .header_profiletitle{
-    font-size:.9em
+    font-size:.9em;
   }
-  .header_logo{
-    height:5em;
-    margin:.4em
-  }
- hr{
 
+
+ hr{
     width:100%
   }
   .portfolio_image{
     min-height:300px;
-    background-image:url(../img/portfolio_image_medium_viewport.png)
+    background-image:url(../img/portfolio_image_medium_viewport.png);
     }
   .featured_work{
     padding-bottom:15px;
@@ -140,3 +137,11 @@
       height:500px;
     }
 }
+
+@media screen and (min-width: 1200px){
+   main,.header,.content,hr{
+      width:1200px;
+      margin-left:auto;
+      margin-right:auto;
+
+    }

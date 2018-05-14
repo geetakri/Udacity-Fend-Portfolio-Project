@@ -12,7 +12,6 @@ html{
 
 html,body{
   margin:0;
-  padding:0;
   width:100%;
   height:100%
 }
@@ -38,38 +37,42 @@ a:hover{
 
 /* Header*/
 .header{
-  padding-top: 35px;
+ padding-top: 35px;
+ width: 100%;
+ margin: 0 auto;
+ padding-top: 0.5em;
+
 }
 
 .header_inner{
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 0.5em;
-}
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+ }
 
-.header_logo{
-  height: 6em;
+ .header_logo {
   margin:0.5em;
-  vertical-align:top;
-}
+  /* width:100%; */
+  content:url("../img/udacity_logo_l_viewport.png");
+  background-size:cover;
+  transition-duration:2s;
+ }
 
-.header_title{
-  margin:.75em .25em;
-  display:inline-block;
-  float:right;
-  color:#2d3c49;
-}
+  .header_title {
+    margin:.75em .25em;
+    color:#2d3c49;
+  }
 
-.header_profilename{
-  font:200 3.5em Roboto;
-  text-align:right;
-}
+.header_profilename {
+   font:200 3.5em Roboto;
+   text-align:right;
+ }
+ .header_profiletitle{
+   font:400 1.3em Roboto;
+   text-align:right;
+ }
 
-.header_profiletitle{
-  font:400 1.3em Roboto;
-  text-align:right;
-}
-
+/* Horizontal Line */
 hr{
   display:block;
   border: 1.5px #7d97ad solid;
