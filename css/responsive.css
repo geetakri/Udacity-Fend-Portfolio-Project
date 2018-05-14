@@ -1,0 +1,142 @@
+/* Featured Work Container */
+.featured_work_container{
+   display:flex;
+   flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.featured_work_project{
+  width: 31.5%;
+  text-align: center;
+}
+
+/*For Smaller Viewport  */
+@media screen and (max-width: 425px){
+    .header_inner{
+      padding-top:0;
+    }
+    .header_title{
+      margin:0 0.1em 0 .25em;
+      padding:.6em;
+    }
+    .header_profilename{
+      font:300 1.2em Roboto;
+    }
+    .header_profiletitle{
+      font-size:.6em;
+    }
+    .header_logo{
+      height:2.5em;margin:.3em;
+    }
+
+    .portfolio_image{
+      min-height:300px;
+      background-image:url(../img/portfolio_image_small_viewport.png)
+    }
+
+    .featured_work_container{
+      padding-top:2px;
+    }
+    .featured_work_project{
+      width:100%;
+      min-height:70px;
+      margin-bottom:1px;
+    }
+    .featured_image{
+      border:1px none #ffdbb8;
+      width:100%;
+    }
+    .featured_work_list{
+      font-size: 0.9em;
+      padding-top: 1.5em;
+    }
+    .featured_title{
+      margin: -0.7em 0 2em .75em;
+    }
+    .featured_title-link{
+      color: #2d3c49;
+      font-size:1.6em;
+    }
+}
+/* For Meduim Viewport  */
+@media screen and (min-width:426px) and (max-width: 799px){
+  body{
+    padding:0
+  }
+
+  .header{
+    padding-top:0
+  }
+  .header_title{
+    margin:.75em 1em .75em .25em
+  }
+  .header_profilename{
+    font-size:2em
+  }
+
+  .header_profiletitle{
+    font-size:.9em
+  }
+  .header_logo{
+    height:5em;
+    margin:.4em
+  }
+ hr{
+
+    width:100%
+  }
+  .portfolio_image{
+    min-height:300px;
+    background-image:url(../img/portfolio_image_medium_viewport.png)
+    }
+  .featured_work{
+    padding-bottom:15px;
+    }
+  .featured_work_project{
+    width:100%;
+    text-align:left;
+    padding:0 10px;
+    transition-duration:2s;
+    }
+
+  .featured_work_list{
+    font-size:1.7em;
+    color:#747704;
+    text-align:center;
+    }
+
+  .first_work,.third_work{
+    background-color:#4d5c79;
+    }
+
+  .second_work,.fourth_work{
+    background-color:#ab7b61;
+    }
+
+  .featured_title{
+    display:inline-block;
+    vertical-align:top;
+    margin:4.5em .75em 0 0;
+    }
+
+  .featured_image{
+    border:1px solid #747707;
+    width:200px;
+    height:133px;
+    margin:15px;
+    }
+
+  .featured_title-link{
+    font-size:2.2em;
+    }
+}
+
+/* For Large Viewport */
+@media screen and (min-width: 800px){
+    .featured_image{
+      width:100%;
+    }
+    .portfolio_image{
+      height:500px;
+    }
+}
